@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
+
+# Limpia los registros existentes antes de generar nuevos datos
+Tweet.destroy_all
+
+# Genera datos de prueba para tweets
+50.times do
+  Tweet.create(
+    description: Faker::Lorem.sentence,
+    user_name: Faker::Internet.username
+  )
+end

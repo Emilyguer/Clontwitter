@@ -1,0 +1,21 @@
+/* Cambiar el color de fondo y del texto del encabezado de la tarjeta */
+
+
+
+  .card-header.text-white {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+ 
+.card-body{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+  .mt-3.text-center {
+    margin-top: 1.5rem;
+
+  }
